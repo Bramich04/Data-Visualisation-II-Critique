@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple pie chart with embedded data.",
+    "height": 200,
+    "width": 200,
+    "config": {
+      "view": {
+      "stroke": "transparent"
+      }
+    },
+    "title": {"text": "Species' harmed by the 2019-20 Australian bushfires"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/Bramich04/Mammal_impact/refs/heads/main/Mammal_impact.csv"
+    },
+    
+   "encoding": {
+      "theta": {"field": "Number displaced or killed", "type": "quantitative", "stack": true},
+      "color": {"field": "Animal", "type": "nominal", "title": "Species"}
+    },
+    "layer": [{
+      "mark": {"type": "arc", "outerRadius": 80, "xOffset": -30, "innerRadius": 40},
+      "encoding": {
+        "tooltip": [
+        {"field": "Animal", "title":"Animal Species:"},
+        {"field": "Number displaced or killed", "title": "No. Displaced or Killed:", "format": ",.0f"}
+        ]
+      }
+    }, 
+  
+    {
+      "mark": {"type": "text", "radius": 110, "dx": -30},
+      "encoding": {
+        "text": {"field": "Number displaced or killed", "type": "nominal", "format": ",.0f"},
+        "opacity": {
+            "condition": {
+              "test": "datum['Animal'] == 'Rats & Mice' || datum['Animal'] == 'Possums & Gliders' || datum['Animal'] == 'Insectivorous Marsupials' || datum['Animal'] == 'Bats' || datum['Animal'] == 'Kangaroos & Wallabies'",
+              "value": 1
+            },
+            "value": 0
+            }
+      }
+    }]
+  }

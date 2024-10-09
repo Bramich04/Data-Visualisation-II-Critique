@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="Visualisation_II.js"></script>
+    <title> The Impact of Australian Bushfires and their contributors </title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    
+   <!--Entire thing-->
+    <div class="outer">
+
+        <!--Section 1-->
+        <div class="Big_Dog_Size">
+
+            <!--First half-->
+            <div class="Medium_Dog_Size">
+
+                <!--Header-->
+                <div class="Heading_Box">
+                    <h1>Bushfires of Australia</h1>
+                </div>
+
+                <!--info area-->
+                <div class="Small_Dog_Size">
+                
+                    <!--info 1-->
+                    <div class="Intro_text_left">
+                        <p> It's essential for Australians to understand the causes and impacts of bushfires. This knowledge can enhance community resilience, ultimately reducing risks to life and property. Additionally, this knowledge fosters environmental awareness.</p>
+                    </div>
+
+                    <!--info 2-->
+                    <div class="Intro_text_right">
+                        <p> The following collection of visualisations displays various Bushfire information relevant to the average Australian. This includes recent Australian Bushfires, the impact of such Bushfires, and factors that may contribute to them.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Below info area-->
+            <div class="Heading_vis">
+                <img src="Bushfire_img.jpg" />
+            </div>
+        </div>
+
+        <!--Section 2-->
+        <div class="Big_Dog_Size">
+
+            <!--info area-->
+            <div class="Graph_info_box">
+                
+                <!--info 1-->
+                <div class="Graph_info_text_left">
+                    <p> This visualisation is a dot distribution map representing Australian Bushfires that occured in 2020. It displays their location and magnitude. </p>
+                </div>
+
+                <!--info 2-->
+                <div class="Graph_info_text_right">
+                    <p> This Bushfire data was produced by NASA sattelites. The magnitude of these fires is derived from the brightness as seen from space. </p>
+                </div>
+
+            </div>
+            <div id="Bushfire_Visualisation">
+            </div>
+        </div>
+
+        <!--Title for impact-->
+        <div class="Seperator">
+            <h2>The impact of Australian Bushfires</h2>
+        </div>
+
+        <!--Section 3-->
+        <div class="Big_Dog_Size">
+
+            <!--info area-->
+            <div class="Graph_info_box">
+                
+                <!--info 1-->
+                <div class="Graph_info_text_left">
+                    <p> During recent Australian bushfires, millions of animals were killed and many more were displaced, leading to large declines in wildlife population. </p>
+                </div>
+
+                <!--info 2-->
+                <div class="Graph_info_text_right">
+                    <p> Understanding the impact of Bushfires on wildlife is crucial for conservation efforts, informing recovery strategies, and fostering awareness. </p>
+                </div>
+
+            </div>
+            <div class="center">
+                <div id="AnimalClass_Visualisation"></div>   
+            </div>
+            <div class="center">
+                <div id="AnimalSpecies_Visualisation"></div>
+            </div>
+            
+            
+        </div>
+
+        <!--Section 4-->
+        <div class="Big_Dog_Size">
+
+            <!--info area-->
+            <div class="Graph_info_box">
+                
+                <!--info 1-->
+                <div class="Graph_info_text_left">
+                    <p> This stacked bar chart represents the percentage of Australian forest-land damaged by Bushfires over the 2019-20 summer season. </p>
+                </div>
+
+                <!--info 2-->
+                <div class="Graph_info_text_right">
+                    <p> Knowing the extent of forest land damaged by bushfires in Australia is vital for assessing environmental health and guiding reforestation efforts. </p>
+                </div>
+
+            </div>
+
+            <div id="BurntArea_Visualisation"></div>
+        </div>
+
+        <!--Title for contributors-->
+        <div class="Seperator">
+            <h2>Australian Bushfire Contributors</h2>
+        </div>  
+
+        <!--Section 5-->
+        <div class="Big_Dog_Size">
+
+            <!--info area-->
+            <div class="Graph_info_box">
+                
+                <!--info 1-->
+                <div class="Graph_info_text_left">
+                    <p> This visualisatrion depicts the average maximum temperature at numerous Australia locations from 1975 to 2019. The magnitude is represented by mark size and colour. </p>
+                </div>
+
+                <!--info 2-->
+                <div class="Graph_info_text_right">
+                    <p> Large Temperatures contribute to bushfires by increasing evaporation, drying out vegetation, and enhancing the likelihood of ignition and the intensity of fires. </p>
+                </div>
+
+            </div>
+
+            <div id="Temperature_Visualisation"></div>
+        </div>
+
+        <!--Section 6-->
+        <div class="Big_Dog_Size">
+
+            <!--info area-->
+            <div class="Graph_info_box">
+                
+                <!--info 1-->
+                <div class="Graph_info_text_left">
+                    <p> This visualisation depicts various environmental conditions that contribute to bushfires. The data was collected daily, at numerous Australian locations in 2016. </p>
+                </div>
+
+                <!--info 2-->
+                <div class="Graph_info_text_right">
+                    <p> Rainfall, Humidity, and Windspeed contribute to bushfires by determining fuel moisture levels, the likelihood of ignition, and the rate at which fires can spread. </p>
+                </div>
+
+            </div>
+
+            <div id="Environment_Visualisation"></div>
+        </div>
+
+        
+    </div>
+
+</body>
+
+</html>

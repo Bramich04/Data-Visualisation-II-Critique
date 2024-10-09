@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple pie chart with embedded data.",
+    "height": 200,
+    "width": 300,
+    "config": {
+      "view": {
+      "stroke": "transparent"
+      }
+    },
+    "title": {"text": "Animal class' harmed by the 2019-20 Australian bushfires"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/Bramich04/Animal_impact/refs/heads/main/Animal_impact.csv"
+    },
+  
+   "encoding": {
+      "theta": {"field": "Number displaced or killed", "type": "quantitative", "stack": true},
+      "color": {"field": "Class", "type": "nominal", "title": "Animal Class"}
+    },
+    "layer": [{
+      "mark": {"type": "arc", "outerRadius": 80, "innerRadius": 40},
+      "encoding": {
+        "tooltip": [
+        {"field": "Class", "title":"Animal Class:"},
+        {"field": "Number displaced or killed", "title": "No. Displaced or Killed:", "format": ",.0f"}
+        ]
+      }
+    }, 
+  
+    {
+      "mark": {"type": "text", "radius": 100},
+      "encoding": {
+        "text": {"field": "Number displaced or killed", "type": "nominal", "format": ",.0f"},
+        "opacity": {
+            "condition": {
+              "test": "datum['Class'] == 'Reptiles' || datum['Class'] == 'Mammals' || datum['Class'] == 'Birds'",
+              "value": 1
+            },
+            "value": 0
+            }
+      }
+    }]
+  }
+          
+      
+        
+    

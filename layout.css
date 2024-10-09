@@ -1,0 +1,130 @@
+/* Whole thing*/
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* Sections */
+.Big_Dog_Size {
+    display: grid;
+    border: 10px solid firebrick;
+    background-color: white;
+    width: 600px; 
+    height: 650px;
+    margin-bottom: 80px;
+}
+
+.Heading_vis {
+    display: grid;
+    border: 2px solid firebrick;
+    width: 600px; 
+    height: 400px;
+}
+
+.Seperator {
+    display: grid;
+    border: 10px solid firebrick;
+    background-color: firebrick;
+    width: 1310px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.Medium_Dog_Size {
+    display: grid;
+    border: 2px solid transparent;
+    width: 600px;
+    height: 250px;
+    background-color: firebrick;
+}
+
+.Small_Dog_Size {
+    display: flex;
+    border: 2px solid firebrick;
+    background-color: white;
+    width: 597px;
+    height: 150px;
+}
+
+
+.Intro_text_left {
+    display: grid;
+    border: 2px solid white;
+    background-color: white;
+    width: 275px;
+    height: 150px;
+    margin-right: 45px;
+}
+
+.Intro_text_right {
+    display: grid;
+    border: 2px solid transparent;
+    background-color: white;
+    width: 270px;
+    height: 150px;
+}
+
+.Graph_info_box {
+    display: flex;
+    border: 2px solid transparent;
+    width: 600px;
+    height: 100px;
+}
+
+.Graph_info_text_left {
+    display: grid;
+    border: 2px solid transparent;
+    background-color: white;
+    width: 275px;
+    height: 100px;
+    margin-right: 40px;
+}
+
+.Graph_info_text_right {
+    display: grid;
+    border: 2px solid transparent;
+    background-color: white;
+    width: 275px;
+    height: 100px;
+}
+
+.Heading_vis img {
+    height: 396px;
+    width: 600px;
+}
+
+.center {
+    border: 5px solid transparent;
+    margin: auto;
+  }
+
+p {
+    font-size: 15px;
+    color: black;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+    margin-left: 370px;
+}
+
+.Heading_Box {
+    display: grid;
+    border: 2px solid transparent;
+    background-color: firebrick;
+    width: 600px;
+    height: 125px;
+}
+
+body {
+    background-color: whitesmoke;
+  }
